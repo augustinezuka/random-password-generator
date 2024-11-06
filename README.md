@@ -1,2 +1,2 @@
-# random-password-generator
-# random-password-generator
+# script that generates a random password
+

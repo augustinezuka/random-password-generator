@@ -1,3 +1,4 @@
+/* Reset margins and padding for all elements */
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box; /* Ensures padding and borders don't affect layout size */
 }
 
+/* Body styling */
 body {
     display: flex;
     justify-content: center;
@@ -13,18 +15,32 @@ body {
     background: linear-gradient(to top right, #04d9ff, #021064); 
 }
 
+/* Container styling */
 .container {
     text-align: center;
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animation for fade-in effect */
 }
 
+/* Animation for fading in the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Password container styling */
 #password-container {
     margin: 1rem 0;
 }
 
+/* Button styling */
 button {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -40,4 +56,35 @@ button {
 button:hover {
     background: linear-gradient(to right, #00d2f7, #435fff);
     transition: background-color 2s ease-in-out;
+}
+
+/* Focus state for accessibility */
+button:focus {
+    outline: 2px solid #ffcc00; /* Gold outline for focus */
+    outline-offset: 2px;
+}
+
+/* Active state for buttons */
+button:active {
+    transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }

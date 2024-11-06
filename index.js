@@ -1,3 +1,5 @@
+document.querySelector('button').onclick =()=>{
+
 function generatePassword(
   length,
   includeLowercase,
@@ -43,4 +45,4 @@ const password = generatePassword(
 
 document.getElementById('re').innerText=password
 
-console.log(`generated : ${password}`);
+console.log(`generated : ${password}`);}

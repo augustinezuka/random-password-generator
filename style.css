@@ -1,3 +1,43 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders don't affect layout size */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top right, #04d9ff, #021064); 
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#password-container {
+    margin: 1rem 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, #00d2f7, #435fff);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00d2f7, #435fff);
+    transition: background-color 2s ease-in-out;
 }

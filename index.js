@@ -8,7 +8,7 @@ document.querySelector('#generate-button').onclick = () => {
   ) {
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     const uppercaseChars = lowercaseChars.toUpperCase();
-    const numberChars = "0123456789";
+    const numberChars = "01234567891234567890";
     const symbolChars = '`~!@#$%^&*()_-+=|}][{:;"/?.>,<';
 
     let allowedChars = "";
@@ -27,7 +27,7 @@ document.querySelector('#generate-button').onclick = () => {
     return password;
   }
 
-  const passwordLength = 16;
+  const passwordLength = 20;
   const includeLowercase = true;
   const includeUppercase = true;
   const includeSymbols = true;

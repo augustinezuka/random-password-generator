@@ -1,3 +1,4 @@
-# script that generates a random password for my portfolio
+# script that generates a random password 
+# Its for my portfolio 
 
 
